@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de seletores</title>
+    <style>
+        body {
+            background-color: grey;
+            color:aliceblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Uma frase</p>
+    <p class="txt"><strong>Texto</strong></p>
+    <div id="div1">Clique aqui</div>
+    <script>
+        var corpo = window.document.body
+       var p0 = window.document.getElementsByTagName('p')[0]
+       var p1 = window.document.querySelector('p.txt') //usar . para indicar classe e # para ID
+       var di = window.document.getElementById('div1')
+       corpo.style.background = 'blueviolet'
+       di.style.backgroundColor = 'red'
+       p0.innerText = 'Outra frase'
+       p0.style.color = 'aqua'
+       document.writeln(p1.innerText)
+       document.write(p1.innerHTML)
+    </script>
+</body>
+</html>

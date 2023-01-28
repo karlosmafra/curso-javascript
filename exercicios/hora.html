@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário</title>
+    <style>
+        body {
+            background-color: rgb(252, 252, 191);
+            font: normal 18pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá!</h1>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var hoje = new Date()
+        var dia = hoje.getDay()
+        var cor = window.document.body
+        cor.style.background
+        if (hora < 6) {
+            document.write ('<p>Boa madrugada!</p>')
+            cor.style.background = 'black'
+            cor.style.color = 'rgb(216,216,216)'
+        }
+        else if (hora < 13) {
+            document.write ('<p>Bom dia!</p>')
+        }
+        else if (hora < 18) {
+            document.write ('<p>Boa tarde!</p>')
+            cor.style.background = 'rgb(70, 130, 180)'
+            cor.style.color = 'rgb(240,240,240)'
+        }
+        else {
+            document.write ('<p>Boa noite!</p>')
+            cor.style.background = 'rgb(16,16,16)'
+            cor.style.color = 'rgb(240,240,240)'
+        }
+        document.write(`Agora são ${hora} horas<br/>`)
+        switch (dia) {
+            case 0: document.write ('Hoje é domingo')
+            break
+            case 1: document.write ('Hoje é segunda-feira')
+            break
+            case 2: document.write ('Hoje é terça-feira')
+            break
+            case 3: document.write ('Hoje é quarta-feira')
+            break
+            case 4: document.write ('Hoje é quinta-feira')
+            break
+            case 5: document.write ('Hoje é sexta-feira')
+            break
+            case 6: document.write ('Hoje é sábado')
+            break
+        }
+    </script>
+</body>
+</html>
