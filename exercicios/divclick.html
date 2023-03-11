@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+    <style>
+        body {
+            font: normal 1.5em Arial;
+        }
+
+        div {
+            color: white;
+            background-color: royalblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Clique...
+    </div>
+    <script>
+        var caixa = document.querySelector('div#caixa')
+
+        function clicar() {
+            caixa.innerText = 'Clicou!'
+            caixa.style.background = 'red'
+        }
+
+        function entrar() {
+            caixa.innerText = 'Entrou'
+            caixa.style.background = 'royalblue'
+        }
+
+        function sair() {
+            caixa.innerText = 'Saiu'
+            caixa.style.background = 'royalblue'
+        }
+    </script>
+</body>
+</html>
