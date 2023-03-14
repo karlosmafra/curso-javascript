@@ -17,12 +17,22 @@ section {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.438);
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
 }
 
-div#frase {
+div {
     text-align: center;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+div#foto {
+    margin-top: 15px;
 }
